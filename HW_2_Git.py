@@ -7,3 +7,5 @@ def is_interesting(n, awesome):
     if n > 97 and (is_good(n + 1, awesome) or is_good(n + 2, awesome)):
         return 1
     return 0
+
+"Hello"
