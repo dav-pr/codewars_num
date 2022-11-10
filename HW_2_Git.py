@@ -4,8 +4,6 @@ def is_good(n, awesome):
 def is_interesting(n, awesome):
     if n > 99 and is_good(n, awesome):
         return 2
-    if n > 97 and (is_good(n + 1, awesome) or is_good(n + 2, awesome)):
-        return 1
-    return 0
+    return 1 if n > 97 and (is_good(n + 1, awesome) or is_good(n + 2, awesome)) else 0
 
 "Hello"
